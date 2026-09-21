@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meridian Operator Console</title>
+<link rel="stylesheet" href="css/meridian.css">
+</head>
+<body>
+<div id="header">
+  <h1>Meridian</h1>
+  <span class="sub">Provincial Agri-Environmental Monitoring &amp; Yield Forecasting</span>
+  <span id="apiver" class="ver"></span>
+</div>
+
+<div id="main">
+  <div id="left">
+    <h2>Stations</h2>
+    <table id="stations" class="grid">
+      <thead><tr><th>Station</th><th>Days</th><th>Years</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div id="right">
+    <h2>Forecast <span id="sel"></span></h2>
+    <table id="forecast" class="grid">
+      <thead><tr><th>Year</th><th>Yield (t/ha)</th><th>Days</th><th>Model</th><th>Run</th></tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Daily series</h2>
+    <div id="chart"></div>
+    <table id="series" class="grid small">
+      <thead><tr><th>DOY</th><th>SW</th><th>ET</th><th>Drain</th><th>Biomass</th><th>LAI</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<div id="footer">Meridian console build 2016.4.2 &middot; partial 2023 rewrite in ui-next/</div>
+
+<script src="js/vendor/jquery-1.11.3.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

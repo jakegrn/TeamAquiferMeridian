@@ -1,0 +1,20 @@
+/* Meridian console styling. 2016. Do not run through a preprocessor,
+   the build box does not have node on it. */
+body { font-family: "Segoe UI", Tahoma, sans-serif; font-size: 13px; margin: 0; color: #222; background: #f4f4f0; }
+#header { background: #2f4f2f; color: #fff; padding: 10px 16px; }
+#header h1 { display: inline; font-size: 18px; margin: 0 12px 0 0; }
+#header .sub { font-size: 12px; opacity: 0.85; }
+#header .ver { float: right; font-size: 11px; opacity: 0.7; }
+#main { display: flex; gap: 16px; padding: 16px; align-items: flex-start; }
+#left { width: 280px; flex: none; }
+#right { flex: 1; min-width: 0; }
+h2 { font-size: 14px; margin: 16px 0 6px; color: #2f4f2f; }
+table.grid { border-collapse: collapse; width: 100%; background: #fff; }
+table.grid th { background: #e3e8dd; text-align: left; padding: 5px 8px; border: 1px solid #cbd2c2; font-weight: 600; }
+table.grid td { padding: 4px 8px; border: 1px solid #e0e0d8; }
+table.grid tbody tr:hover { background: #f0f4ea; cursor: pointer; }
+table.grid tr.sel td { background: #dce8cf; }
+table.small td, table.small th { font-size: 11px; padding: 2px 6px; }
+#chart { height: 160px; background: #fff; border: 1px solid #cbd2c2; margin-bottom: 10px; position: relative; overflow: hidden; }
+#chart .bar { position: absolute; bottom: 0; background: #6b8e5a; width: 2px; }
+#footer { padding: 8px 16px; font-size: 11px; color: #777; border-top: 1px solid #ddd; }

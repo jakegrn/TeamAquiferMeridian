@@ -1,0 +1,9 @@
+*.o
+*.pyc
+__pycache__/
+services/build/
+model/cropmod
+model/MERIDIAN.OUT
+ingest/mrd_ingest
+data/*.db
+data/*.bin
